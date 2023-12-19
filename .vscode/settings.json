@@ -1,0 +1,9 @@
+{
+  "docify.commentService.docstringFormat": "JsDoc",
+  "docify.commentService.autoTranslationService": "Indonesian",
+  "docify.commentService.sidePanelReviewMode": true,
+  "docify.translateService.targetLanguage": "Indonesian",
+  "docify.translateService.docstringFormat": "JsDoc",
+  "docify.translateService.sourceLanguage": "Indonesian",
+  "docify.commentService.programmingLanguage": "javascript"
+}

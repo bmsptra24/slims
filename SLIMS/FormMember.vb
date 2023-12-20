@@ -1,8 +1,7 @@
 ﻿Imports System.Net
-Imports System.IO
 Imports Newtonsoft.Json
 Imports SLIMS.ClassBook
-Imports System.Drawing.Printing
+Imports SLIMS.UserControlABook
 
 Public Class FormMember
 
@@ -30,9 +29,6 @@ Public Class FormMember
         'Initial Homepage
         btnHome_Click(sender, e)
 
-        ServicePointManager.Expect100Continue = True
-        ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
-
         ' The URL of the external image
         Dim imageUrl As String = "https://cdn.pixabay.com/photo/2019/08/11/18/59/icon-4399701_1280.png"
 
@@ -42,8 +38,38 @@ Public Class FormMember
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         FormApp.Show()
+        Me.Dispose()
         Me.Close()
     End Sub
+
+    Public Async Function showBookCover(memberControlHome As MemberControlHome) As Task
+        memberControlHome.FlowLayoutPanelBookContainer.Controls.Clear()
+
+        Dim json = Await ClassBook.FindAll("25")
+        Dim books As List(Of ClassBook.Book) = JsonConvert.DeserializeObject(Of List(Of ClassBook.Book))(json)
+        Dim filterText As String = memberControlHome.TextBoxSearch.Text.ToLower()
+
+        For Each book As ClassBook.Book In books
+            If book.title.ToLower().Contains(filterText) OrElse
+                book.description.ToLower().Contains(filterText) Then
+
+                Dim userControlABook = New UserControlABook()
+                userControlABook.LabelBookTitle.Text = book.title
+                userControlABook.LabelBookDescription.Text = book.description
+                userControlABook.varBookId.Text = book.id
+                userControlABook.varBookLink.Text = book.linkPdf
+                If String.IsNullOrEmpty(book.cover) Then
+                    Await ClassAPI.GetImage(ClassConfiguration.coverDefaultLink, userControlABook.PictureBoxCover)
+                Else
+                    userControlABook.PictureBoxCover.Image = ClassUtils.Base64StringToImage(book.cover)
+                End If
+                userControlABook.Margin = New Padding(20, 20, 20, 20)
+                memberControlHome.FlowLayoutPanelBookContainer.Controls.Add(userControlABook)
+
+            End If
+
+        Next
+    End Function
 
     Private Async Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
         resetAllButtonNavigate(btnHome)
@@ -51,20 +77,7 @@ Public Class FormMember
         Dim memberControlHome = New MemberControlHome()
         ClassNavigation.changeControl(memberControlHome, SplitContainer1.Panel2)
 
-        Dim json = Await ClassBook.FindAll("25")
-        Dim books As List(Of Book) = JsonConvert.DeserializeObject(Of List(Of Book))(json)
-
-        For Each book As Book In books
-            Dim userControlABook = New UserControlABook()
-            userControlABook.LabelBookTitle.Text = book.title
-            userControlABook.LabelBookDescription.Text = book.description
-            userControlABook.varBookId.Text = book.id
-            'ClassAPI.GetImage(book.coverId, userControlABook.PictureBoxCover)
-            Await ClassAPI.GetImage("https://edit.org/images/cat/book-covers-big-2019101610.jpg", userControlABook.PictureBoxCover)
-
-            userControlABook.Margin = New Padding(20, 20, 20, 20)
-            memberControlHome.FlowLayoutPanelBookContainer.Controls.Add(userControlABook)
-        Next
+        Await showBookCover(memberControlHome)
     End Sub
 
     Private Async Sub btnHistory_Click(sender As Object, e As EventArgs) Handles btnHistory.Click
@@ -74,9 +87,11 @@ Public Class FormMember
         Await ClassUser.showHistory(memberControlHistory)
     End Sub
 
-    Private Sub btnComment_Click(sender As Object, e As EventArgs) Handles btnComment.Click
+    Private Async Sub btnComment_Click(sender As Object, e As EventArgs) Handles btnComment.Click
         resetAllButtonNavigate(btnComment)
-        ClassNavigation.changeControl(New MemberControlComment(), SplitContainer1.Panel2)
+        Dim memberControlComment = New MemberControlComment()
+        ClassNavigation.changeControl(memberControlComment, SplitContainer1.Panel2)
+        Await ClassComment.showTable(memberControlComment)
     End Sub
 
     Private Async Sub btnRank_Click(sender As Object, e As EventArgs) Handles btnRank.Click
@@ -86,11 +101,12 @@ Public Class FormMember
         Await ClassUser.showRank(memberControlRank)
     End Sub
 
-    Private Sub btnAskAI_Click(sender As Object, e As EventArgs) Handles btnAskAI.Click
+    Private Async Sub btnAskAI_Click(sender As Object, e As EventArgs) Handles btnAskAI.Click
         If RichTextBoxAskAI.Text = "" Then
             Return
         End If
         PanelParentAnswerAskAI.Visible = True
+        ButtonClear.Visible = True
 
         Dim NewAnswerControlUser = New AskAIControlUser()
         NewAnswerControlUser.Dock = DockStyle.Top
@@ -100,7 +116,14 @@ Public Class FormMember
 
         Dim NewAnswerControlAI = New AskAIControlAI()
         NewAnswerControlAI.Dock = DockStyle.Top
-        NewAnswerControlAI.LabelAnswer.Text = "Ya benar sekali!"
         PanelParentAnswerAskAI.Controls.Add(NewAnswerControlAI)
+        Dim response = Await ClassOpenAI.Ask(NewAnswerControlUser.LabelAnswer.Text)
+        NewAnswerControlAI.LabelAnswer.Text = response.data
+    End Sub
+
+    Private Sub ButtonClear_Click(sender As Object, e As EventArgs) Handles ButtonClear.Click
+        PanelParentAnswerAskAI.Controls.Clear()
+        PanelParentAnswerAskAI.Visible = False
+        ButtonClear.Visible = False
     End Sub
 End Class

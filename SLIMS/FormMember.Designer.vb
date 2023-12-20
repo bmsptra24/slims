@@ -22,12 +22,12 @@ Partial Class FormMember
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormMember))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
+        Me.ButtonClear = New System.Windows.Forms.Button()
         Me.PanelParentAnswerAskAI = New System.Windows.Forms.Panel()
         Me.PanelAnswerAskAI = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
@@ -101,11 +101,12 @@ Partial Class FormMember
         'SplitContainer1.Panel1
         '
         Me.SplitContainer1.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.SplitContainer1.Panel1.Controls.Add(Me.ButtonClear)
         Me.SplitContainer1.Panel1.Controls.Add(Me.PanelParentAnswerAskAI)
         Me.SplitContainer1.Panel1.Controls.Add(Me.Panel4)
         Me.SplitContainer1.Panel1.Controls.Add(Me.Panel2)
         Me.SplitContainer1.Panel1.Controls.Add(Me.Panel10)
-        Me.SplitContainer1.Panel1.Padding = New System.Windows.Forms.Padding(10, 10, 10, 10)
+        Me.SplitContainer1.Panel1.Padding = New System.Windows.Forms.Padding(10)
         '
         'SplitContainer1.Panel2
         '
@@ -116,6 +117,21 @@ Partial Class FormMember
         Me.SplitContainer1.Size = New System.Drawing.Size(1264, 657)
         Me.SplitContainer1.SplitterDistance = 220
         Me.SplitContainer1.TabIndex = 3
+        '
+        'ButtonClear
+        '
+        Me.ButtonClear.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.ButtonClear.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.ButtonClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonClear.Font = New System.Drawing.Font("Georgia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonClear.ForeColor = System.Drawing.SystemColors.Control
+        Me.ButtonClear.Location = New System.Drawing.Point(10, 335)
+        Me.ButtonClear.Name = "ButtonClear"
+        Me.ButtonClear.Size = New System.Drawing.Size(200, 27)
+        Me.ButtonClear.TabIndex = 10
+        Me.ButtonClear.Text = "Clear"
+        Me.ButtonClear.UseVisualStyleBackColor = False
+        Me.ButtonClear.Visible = False
         '
         'PanelParentAnswerAskAI
         '
@@ -137,7 +153,7 @@ Partial Class FormMember
         Me.PanelAnswerAskAI.Location = New System.Drawing.Point(0, 0)
         Me.PanelAnswerAskAI.Name = "PanelAnswerAskAI"
         Me.PanelAnswerAskAI.Size = New System.Drawing.Size(200, 243)
-        Me.PanelAnswerAskAI.TabIndex = 4
+        Me.PanelAnswerAskAI.TabIndex = 6
         '
         'Panel4
         '
@@ -154,6 +170,7 @@ Partial Class FormMember
         Me.RichTextBoxAskAI.BackColor = System.Drawing.Color.White
         Me.RichTextBoxAskAI.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBoxAskAI.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RichTextBoxAskAI.Font = New System.Drawing.Font("Georgia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RichTextBoxAskAI.Location = New System.Drawing.Point(0, 0)
         Me.RichTextBoxAskAI.Name = "RichTextBoxAskAI"
         Me.RichTextBoxAskAI.Size = New System.Drawing.Size(131, 42)
@@ -166,7 +183,7 @@ Partial Class FormMember
         Me.btnAskAI.Dock = System.Windows.Forms.DockStyle.Right
         Me.btnAskAI.FlatAppearance.BorderSize = 0
         Me.btnAskAI.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAskAI.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAskAI.Font = New System.Drawing.Font("Georgia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAskAI.ForeColor = System.Drawing.SystemColors.Control
         Me.btnAskAI.Location = New System.Drawing.Point(131, 0)
         Me.btnAskAI.Name = "btnAskAI"
@@ -272,17 +289,17 @@ Partial Class FormMember
         Me.Panel11.Controls.Add(Me.Label14)
         Me.Panel11.Controls.Add(Me.LabelUserName)
         Me.Panel11.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel11.Location = New System.Drawing.Point(45, 20)
+        Me.Panel11.Location = New System.Drawing.Point(55, 20)
         Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(145, 44)
+        Me.Panel11.Size = New System.Drawing.Size(135, 44)
         Me.Panel11.TabIndex = 3
         '
         'PictureBox1
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Image = Global.SLIMS.My.Resources.Resources.log_out
         Me.PictureBox1.InitialImage = Nothing
-        Me.PictureBox1.Location = New System.Drawing.Point(110, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(100, 0)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(35, 44)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -317,7 +334,7 @@ Partial Class FormMember
         Me.PictureBoxProfilMember.InitialImage = Nothing
         Me.PictureBoxProfilMember.Location = New System.Drawing.Point(10, 20)
         Me.PictureBoxProfilMember.Name = "PictureBoxProfilMember"
-        Me.PictureBoxProfilMember.Size = New System.Drawing.Size(35, 44)
+        Me.PictureBoxProfilMember.Size = New System.Drawing.Size(45, 44)
         Me.PictureBoxProfilMember.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBoxProfilMember.TabIndex = 0
         Me.PictureBoxProfilMember.TabStop = False
@@ -374,7 +391,7 @@ Partial Class FormMember
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
     Friend WithEvents RichTextBoxAskAI As System.Windows.Forms.RichTextBox
     Friend WithEvents btnAskAI As System.Windows.Forms.Button
-    Friend WithEvents PanelParentAnswerAskAI As System.Windows.Forms.Panel
-    Friend WithEvents PanelAnswerAskAI As System.Windows.Forms.Panel
-
+    Friend WithEvents ButtonClear As Button
+    Friend WithEvents PanelParentAnswerAskAI As Panel
+    Friend WithEvents PanelAnswerAskAI As Panel
 End Class

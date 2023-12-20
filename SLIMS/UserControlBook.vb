@@ -13,7 +13,7 @@ Public Class UserControlBook
             Dim bookAuthor As String = If(DataGridViewBooks.Rows(e.RowIndex).Cells("author").Value IsNot Nothing, CStr(DataGridViewBooks.Rows(e.RowIndex).Cells("author").Value), "")
             Dim publicationYear As String = If(DataGridViewBooks.Rows(e.RowIndex).Cells("publicationYear").Value IsNot Nothing, CStr(DataGridViewBooks.Rows(e.RowIndex).Cells("publicationYear").Value), "")
             Dim stock As Integer = If(DataGridViewBooks.Rows(e.RowIndex).Cells("stock").Value IsNot Nothing, CInt(DataGridViewBooks.Rows(e.RowIndex).Cells("stock").Value), 0)
-            Dim coverId As String = If(DataGridViewBooks.Rows(e.RowIndex).Cells("coverId").Value IsNot Nothing, CStr(DataGridViewBooks.Rows(e.RowIndex).Cells("coverId").Value), "")
+            Dim linkPdf As String = If(DataGridViewBooks.Rows(e.RowIndex).Cells("linkPdf").Value IsNot Nothing, CStr(DataGridViewBooks.Rows(e.RowIndex).Cells("linkPdf").Value), "")
             Dim createdAt As DateTime = If(DataGridViewBooks.Rows(e.RowIndex).Cells("createdAt").Value IsNot Nothing, CDate(DataGridViewBooks.Rows(e.RowIndex).Cells("createdAt").Value), DateTime.MinValue)
 
             ' Create a new TBook object with the updated publicationYear
@@ -24,7 +24,7 @@ Public Class UserControlBook
                 .author = bookAuthor,
                 .publicationYear = publicationYear,
                 .stock = stock,
-                .coverId = coverId,
+                .linkPdf = linkPdf,
                 .createdAt = createdAt
             }
 
@@ -40,14 +40,12 @@ Public Class UserControlBook
     End Sub
 
     Private Async Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
-        Dim json As String = Await ClassBook.Add()
-        Console.WriteLine(json)
-
-        FormAdmin.resetAllButtonNavigate(FormAdmin.btnBookManagement)
-        Dim userControlBook = New UserControlBook()
-        Await ClassBook.showTable(userControlBook)
-        ClassNavigation.changeControl(userControlBook, FormAdmin.SplitContainer1.Panel2)
+        Dim userControlBookEdit = New UserControlBookEdit()
+        ' Dim response As String = Await ClassBook.Add()
+        ' Console.WriteLine(response)
+        ' Dim json = JsonConvert.DeserializeObject(Of ClassBook.Book)(response)
+        ' UserControlBookEdit.idBookEdit = json.id
+        ClassNavigation.changeControl(userControlBookEdit, FormAdmin.SplitContainer1.Panel2)
     End Sub
 
     Private Async Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -64,4 +62,9 @@ Public Class UserControlBook
         Dim bookId As Integer = If(DataGridViewBooks.Rows(e.RowIndex).Cells("id").Value IsNot Nothing, CInt(DataGridViewBooks.Rows(e.RowIndex).Cells("id").Value), e.RowIndex)
         ClassBook.selectedBook = bookId
     End Sub
+
+    Private Async Sub TextBoxSearch_TextChanged(sender As Object, e As EventArgs) Handles TextBoxSearch.TextChanged
+        Await ClassBook.showTable(Me)
+    End Sub
+
 End Class

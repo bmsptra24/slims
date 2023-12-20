@@ -23,7 +23,7 @@ Partial Class MemberControlHome
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.FlowLayoutPanelBookContainer = New System.Windows.Forms.FlowLayoutPanel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBoxSearch = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'FlowLayoutPanelBookContainer
@@ -35,21 +35,21 @@ Partial Class MemberControlHome
         Me.FlowLayoutPanelBookContainer.Size = New System.Drawing.Size(1027, 601)
         Me.FlowLayoutPanelBookContainer.TabIndex = 3
         '
-        'TextBox1
+        'TextBoxSearch
         '
-        Me.TextBox1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(0, 0)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(1027, 30)
-        Me.TextBox1.TabIndex = 2
+        Me.TextBoxSearch.Dock = System.Windows.Forms.DockStyle.Top
+        Me.TextBoxSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxSearch.Location = New System.Drawing.Point(0, 0)
+        Me.TextBoxSearch.Name = "TextBoxSearch"
+        Me.TextBoxSearch.Size = New System.Drawing.Size(1027, 30)
+        Me.TextBoxSearch.TabIndex = 2
         '
         'MemberControlHome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.Controls.Add(Me.FlowLayoutPanelBookContainer)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TextBoxSearch)
         Me.Name = "MemberControlHome"
         Me.Size = New System.Drawing.Size(1027, 631)
         Me.ResumeLayout(False)
@@ -57,6 +57,6 @@ Partial Class MemberControlHome
 
     End Sub
     Friend WithEvents FlowLayoutPanelBookContainer As System.Windows.Forms.FlowLayoutPanel
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxSearch As System.Windows.Forms.TextBox
 
 End Class

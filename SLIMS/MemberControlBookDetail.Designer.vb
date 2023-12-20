@@ -35,13 +35,13 @@ Partial Class MemberControlBookDetail
         Me.Label8 = New System.Windows.Forms.Label()
         Me.LabelAuthor = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.LabelBookId = New System.Windows.Forms.Label()
         Me.LabelPublicationYear = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.LabelBookTitle = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.LabelBookId = New System.Windows.Forms.Label()
         CType(Me.PictureBoxCover, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.FlowLayoutPanelComments.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -189,6 +189,17 @@ Partial Class MemberControlBookDetail
         Me.Label7.TabIndex = 0
         Me.Label7.Text = ":"
         '
+        'LabelBookId
+        '
+        Me.LabelBookId.AutoSize = True
+        Me.LabelBookId.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelBookId.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.LabelBookId.Location = New System.Drawing.Point(177, 67)
+        Me.LabelBookId.Name = "LabelBookId"
+        Me.LabelBookId.Size = New System.Drawing.Size(21, 18)
+        Me.LabelBookId.TabIndex = 0
+        Me.LabelBookId.Text = "id"
+        '
         'LabelPublicationYear
         '
         Me.LabelPublicationYear.AutoSize = True
@@ -200,6 +211,17 @@ Partial Class MemberControlBookDetail
         Me.LabelPublicationYear.TabIndex = 0
         Me.LabelPublicationYear.Text = "yyyy"
         '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.Label9.Location = New System.Drawing.Point(161, 67)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(13, 18)
+        Me.Label9.TabIndex = 0
+        Me.Label9.Text = ":"
+        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -210,6 +232,17 @@ Partial Class MemberControlBookDetail
         Me.Label6.Size = New System.Drawing.Size(13, 18)
         Me.Label6.TabIndex = 0
         Me.Label6.Text = ":"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.Label5.Location = New System.Drawing.Point(18, 67)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(65, 18)
+        Me.Label5.TabIndex = 0
+        Me.Label5.Text = "Book ID"
         '
         'Label2
         '
@@ -232,39 +265,6 @@ Partial Class MemberControlBookDetail
         Me.LabelBookTitle.Size = New System.Drawing.Size(130, 27)
         Me.LabelBookTitle.TabIndex = 0
         Me.LabelBookTitle.Text = "Book Title"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(53, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(18, 67)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(65, 18)
-        Me.Label5.TabIndex = 0
-        Me.Label5.Text = "Book ID"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(53, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(161, 67)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(13, 18)
-        Me.Label9.TabIndex = 0
-        Me.Label9.Text = ":"
-        '
-        'LabelBookId
-        '
-        Me.LabelBookId.AutoSize = True
-        Me.LabelBookId.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelBookId.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(53, Byte), Integer))
-        Me.LabelBookId.Location = New System.Drawing.Point(177, 67)
-        Me.LabelBookId.Name = "LabelBookId"
-        Me.LabelBookId.Size = New System.Drawing.Size(21, 18)
-        Me.LabelBookId.TabIndex = 0
-        Me.LabelBookId.Text = "id"
         '
         'MemberControlBookDetail
         '

@@ -1,7 +1,5 @@
 ﻿Imports System.Net
-Imports System.IO
 Imports System.Windows.Forms.DataVisualization.Charting
-Imports Newtonsoft.Json
 
 Public Class FormAdmin
     Dim userControlLoading = New UserControlLoading()
@@ -44,10 +42,6 @@ Public Class FormAdmin
 
     End Sub
 
-
-
-
-
     'Button Navigation OnClick
     Public Async Sub btnDashboard_Click(sender As Object, e As EventArgs) Handles btnDashboard.Click
         resetAllButtonNavigate(btnDashboard)
@@ -67,6 +61,7 @@ Public Class FormAdmin
         'USER
         userControlDashboard.ChartMember.Series.Clear()
         Dim seriesUser As New Series
+        seriesUser.Name = "2023"
         seriesUser.ChartType = SeriesChartType.Line
 
         For i As Integer = 1 To 12
@@ -80,32 +75,31 @@ Public Class FormAdmin
         'BOOKS
         userControlDashboard.ChartBooks.Series.Clear()
         Dim seriesBooks As New Series
+        seriesBooks.Name = "2023"
         seriesBooks.ChartType = SeriesChartType.Line
 
         For i As Integer = 1 To 12
             Dim response = Await ClassBook.CountInMonth($"2023-{i}-01", $"202{If(i >= 12, "4", "3")}-{If(i >= 12, i, i + 1)}-01")
             seriesBooks.Points.AddXY(i, response)
         Next
-
         userControlDashboard.ChartBooks.Series.Add(seriesBooks)
-
 
         'BORROWED
         userControlDashboard.ChartBorrowed.Series.Clear()
         Dim seriesBorrow As New Series
+        seriesBorrow.Name = "2023"
         seriesBorrow.ChartType = SeriesChartType.Line
 
         For i As Integer = 1 To 12
             Dim response = Await ClassTransaction.CountInMonthBorrow($"2023-{i}-01", $"202{If(i >= 12, "4", "3")}-{If(i >= 12, i, i + 1)}-01")
             seriesBorrow.Points.AddXY(i, response)
         Next
-
         userControlDashboard.ChartBorrowed.Series.Add(seriesBorrow)
-
 
         'RETUNED
         userControlDashboard.ChartReturned.Series.Clear()
         Dim seriesReturn As New Series
+        seriesReturn.Name = "2023"
         seriesReturn.ChartType = SeriesChartType.Line
 
         For i As Integer = 1 To 12
@@ -120,7 +114,6 @@ Public Class FormAdmin
     Private Sub btnBorrowBooks_Click(sender As Object, e As EventArgs) Handles btnBorrowBooks.Click
         resetAllButtonNavigate(btnBorrowBooks)
         ClassNavigation.changeControl(userControlLoading, SplitContainer1.Panel2)
-
         Dim userControlBorrowBooks = New UserControlBorrowBooks()
         ClassNavigation.changeControl(userControlBorrowBooks, SplitContainer1.Panel2)
 
@@ -133,7 +126,7 @@ Public Class FormAdmin
 
     End Sub
 
-    Private Async Sub btnBookManagement_Click(sender As Object, e As EventArgs) Handles btnBookManagement.Click
+    Public Async Sub btnBookManagement_Click(sender As Object, e As EventArgs) Handles btnBookManagement.Click
         resetAllButtonNavigate(btnBookManagement)
         ClassNavigation.changeControl(userControlLoading, SplitContainer1.Panel2)
 
@@ -142,7 +135,6 @@ Public Class FormAdmin
         Await ClassBook.showTable(userControlBook)
 
         ClassNavigation.changeControl(userControlBook, SplitContainer1.Panel2)
-
 
     End Sub
 
@@ -162,6 +154,7 @@ Public Class FormAdmin
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         FormApp.Show()
+        Me.Dispose()
         Me.Close()
     End Sub
 End Class

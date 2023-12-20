@@ -37,30 +37,30 @@ Partial Class AskAIControlAI
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Padding = New System.Windows.Forms.Padding(5, 5, 5, 15)
-        Me.Panel5.Size = New System.Drawing.Size(193, 59)
+        Me.Panel5.Size = New System.Drawing.Size(193, 54)
         Me.Panel5.TabIndex = 2
         '
         'LabelAnswer
         '
         Me.LabelAnswer.AutoSize = True
         Me.LabelAnswer.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LabelAnswer.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelAnswer.Location = New System.Drawing.Point(5, 18)
+        Me.LabelAnswer.Font = New System.Drawing.Font("Georgia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelAnswer.Location = New System.Drawing.Point(5, 22)
         Me.LabelAnswer.MaximumSize = New System.Drawing.Size(190, 0)
         Me.LabelAnswer.Name = "LabelAnswer"
-        Me.LabelAnswer.Size = New System.Drawing.Size(163, 26)
+        Me.LabelAnswer.Size = New System.Drawing.Size(70, 17)
         Me.LabelAnswer.TabIndex = 3
-        Me.LabelAnswer.Text = "What the best web programming book?"
+        Me.LabelAnswer.Text = "Loading..."
         Me.LabelAnswer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Georgia", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(5, 5)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(19, 13)
+        Me.Label5.Size = New System.Drawing.Size(26, 17)
         Me.Label5.TabIndex = 2
         Me.Label5.Text = "AI"
         '

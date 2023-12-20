@@ -143,10 +143,13 @@
     </Compile>
     <Compile Include="ClassAPI.vb" />
     <Compile Include="ClassBook.vb" />
+    <Compile Include="ClassComment.vb" />
+    <Compile Include="ClassOpenAI.vb" />
     <Compile Include="ClassTransaction.vb" />
     <Compile Include="ClassUser.vb" />
     <Compile Include="ClassConfiguration.vb" />
     <Compile Include="ClassNavigation.vb" />
+    <Compile Include="ClassUtils.vb" />
     <Compile Include="FormMember.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -164,12 +167,6 @@
       <DependentUpon>FormApp.vb</DependentUpon>
     </Compile>
     <Compile Include="FormApp.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormSignUp.Designer.vb">
-      <DependentUpon>FormSignUp.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FormSignUp.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MemberControlBookDetail.Designer.vb">
@@ -302,9 +299,6 @@
     <EmbeddedResource Include="FormApp.resx">
       <DependentUpon>FormApp.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSignUp.resx">
-      <DependentUpon>FormSignUp.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MemberControlBookDetail.resx">
       <DependentUpon>MemberControlBookDetail.vb</DependentUpon>
     </EmbeddedResource>
@@ -394,6 +388,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1636690539-alfons-morales-YLSwjSy7stw-unsplash-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

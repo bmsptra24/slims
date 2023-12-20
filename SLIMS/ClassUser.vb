@@ -1,7 +1,4 @@
-﻿Imports System.Net.Http
-Imports Newtonsoft.Json
-
-
+﻿Imports Newtonsoft.Json
 Public Class ClassUser
     Public Class TUser
         Public Property id As String
@@ -29,6 +26,7 @@ Public Class ClassUser
         Public Property dateReturn As Date
         Public Property createdAt As Date
         Public Property isReturned As Boolean
+        Public Property userId As String
         Public Property Book As TBook
     End Class
 
@@ -54,6 +52,11 @@ Public Class ClassUser
 
     Public Shared Async Function SignIn(nim As String, password As String) As Task(Of String)
         Dim apiUrl As String = $"{ClassConfiguration.baseUrl}/user/signin?nim={nim}&password={password}"
+        Return Await ClassAPI.SendRequest(apiUrl)
+    End Function
+
+    Public Shared Async Function SignUp(name As String, nim As String, address As String, email As String, phoneNumber As String, password As String) As Task(Of String)
+        Dim apiUrl As String = $"{ClassConfiguration.baseUrl}/user/signup?name={Uri.EscapeDataString(name)}&nim={Uri.EscapeDataString(nim)}&address={Uri.EscapeDataString(address)}&email={Uri.EscapeDataString(email)}&phoneNumber={Uri.EscapeDataString(phoneNumber)}&password={Uri.EscapeDataString(password)}"
         Return Await ClassAPI.SendRequest(apiUrl)
     End Function
 
@@ -89,6 +92,9 @@ Public Class ClassUser
 
 
     Public Shared Async Function showTable(userControlUser As UserControlAccountManagement) As Task
+        userControlUser.DataGridViewAccounts.Columns.Clear()
+        userControlUser.DataGridViewAccounts.Rows.Clear()
+
         Dim json = Await FindAll("25")
         Console.WriteLine(json)
         Dim users As List(Of TUser) = JsonConvert.DeserializeObject(Of List(Of TUser))(json)
@@ -104,17 +110,29 @@ Public Class ClassUser
         userControlUser.DataGridViewAccounts.Columns.Add("numBorrowedBooks", "Borrowed Books")
         userControlUser.DataGridViewAccounts.Columns.Add("numReturnedBooks", "Returned Books")
 
+        Dim filterText As String = userControlUser.TextBoxSearch.Text.ToLower()
+
         ' Add table values
         For Each user As TUser In users
-            userControlUser.DataGridViewAccounts.Rows.Add(user.id, user.name, user.email, user.nim, user.alamat, user.nohp, user.password, user.numBorrowedBooks, user.numReturnedBooks)
+            If user.name.ToLower().Contains(filterText) OrElse
+           user.email.ToLower().Contains(filterText) OrElse
+           user.alamat.ToLower().Contains(filterText) OrElse
+           user.nim.ToLower().Contains(filterText) Then
+
+                userControlUser.DataGridViewAccounts.Rows.Add(user.id, user.name, user.email, user.nim, user.alamat, user.nohp, user.password, user.numBorrowedBooks, user.numReturnedBooks)
+
+            End If
+
         Next
 
 
     End Function
 
     Public Shared Async Function showHistory(memberControlHistory As MemberControlHistory) As Task
+        memberControlHistory.DataGridViewHistory.Columns.Clear()
+        memberControlHistory.DataGridViewHistory.Rows.Clear()
+
         Dim jsonTransactions = Await ClassTransaction.FindAll("25")
-        Console.WriteLine(jsonTransactions)
         Dim transactions As List(Of ClassUser.TTransaction) = JsonConvert.DeserializeObject(Of List(Of ClassUser.TTransaction))(jsonTransactions)
 
         ' Create table header
@@ -127,20 +145,30 @@ Public Class ClassUser
         memberControlHistory.DataGridViewHistory.Columns.Add("dateReturn", "Last Return")
         memberControlHistory.DataGridViewHistory.Columns.Add("createdAt", "Created at")
 
+        Dim filterText As String = memberControlHistory.TextBoxSearch.Text.ToLower()
+
         ' Add table values
         Dim i = 1
         For Each transaction As ClassUser.TTransaction In transactions
-            memberControlHistory.DataGridViewHistory.Rows.Add(
-                i,
-                transaction.Book.title,
-                transaction.Book.description,
-                transaction.Book.author,
-                transaction.Book.publicationYear,
-                If(transaction.isReturned, "Yes", "No"),
-                transaction.dateReturn,
-                transaction.createdAt
+            ' Apply the filter condition
+            If String.Equals(transaction.userId, ClassUser.userData.id) And
+                (transaction.Book.title.ToLower().Contains(filterText) OrElse
+                transaction.Book.description.ToLower().Contains(filterText) OrElse
+                transaction.Book.publicationYear.ToLower().Contains(filterText) OrElse
+                transaction.Book.author.ToLower().Contains(filterText)) Then
+
+                memberControlHistory.DataGridViewHistory.Rows.Add(
+                    i,
+                    transaction.Book.title,
+                    transaction.Book.description,
+                    transaction.Book.author,
+                    transaction.Book.publicationYear,
+                    If(transaction.isReturned, "Yes", "No"),
+                    transaction.dateReturn,
+                    transaction.createdAt
                 )
-            i = i + 1
+                i = i + 1
+            End If
         Next
     End Function
 

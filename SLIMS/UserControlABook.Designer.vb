@@ -24,6 +24,7 @@ Partial Class UserControlABook
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UserControlABook))
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.varBookLink = New System.Windows.Forms.Label()
         Me.varBookId = New System.Windows.Forms.Label()
         Me.LabelBookDescription = New System.Windows.Forms.Label()
         Me.PictureBoxCover = New System.Windows.Forms.PictureBox()
@@ -36,6 +37,7 @@ Partial Class UserControlABook
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(235, Byte), Integer))
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel3.Controls.Add(Me.varBookLink)
         Me.Panel3.Controls.Add(Me.varBookId)
         Me.Panel3.Controls.Add(Me.LabelBookDescription)
         Me.Panel3.Controls.Add(Me.PictureBoxCover)
@@ -47,6 +49,16 @@ Partial Class UserControlABook
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(201, 318)
         Me.Panel3.TabIndex = 2
+        '
+        'varBookLink
+        '
+        Me.varBookLink.AutoSize = True
+        Me.varBookLink.BackColor = System.Drawing.Color.Transparent
+        Me.varBookLink.ForeColor = System.Drawing.Color.Transparent
+        Me.varBookLink.Location = New System.Drawing.Point(212, 251)
+        Me.varBookLink.Name = "varBookLink"
+        Me.varBookLink.Size = New System.Drawing.Size(0, 14)
+        Me.varBookLink.TabIndex = 4
         '
         'varBookId
         '
@@ -62,7 +74,7 @@ Partial Class UserControlABook
         '
         Me.LabelBookDescription.AutoSize = True
         Me.LabelBookDescription.Location = New System.Drawing.Point(12, 271)
-        Me.LabelBookDescription.MaximumSize = New System.Drawing.Size(160, 0)
+        Me.LabelBookDescription.MaximumSize = New System.Drawing.Size(160, 30)
         Me.LabelBookDescription.Name = "LabelBookDescription"
         Me.LabelBookDescription.Size = New System.Drawing.Size(150, 28)
         Me.LabelBookDescription.TabIndex = 2
@@ -83,10 +95,11 @@ Partial Class UserControlABook
         Me.LabelBookTitle.AutoSize = True
         Me.LabelBookTitle.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelBookTitle.Location = New System.Drawing.Point(12, 247)
+        Me.LabelBookTitle.MaximumSize = New System.Drawing.Size(190, 20)
         Me.LabelBookTitle.Name = "LabelBookTitle"
-        Me.LabelBookTitle.Size = New System.Drawing.Size(80, 18)
+        Me.LabelBookTitle.Size = New System.Drawing.Size(167, 20)
         Me.LabelBookTitle.TabIndex = 1
-        Me.LabelBookTitle.Text = "Book Title"
+        Me.LabelBookTitle.Text = "Book Title e dwefefew fewf wef ewf"
         '
         'UserControlABook
         '
@@ -107,4 +120,5 @@ Partial Class UserControlABook
     Friend WithEvents PictureBoxCover As PictureBox
     Friend WithEvents LabelBookTitle As Label
     Friend WithEvents varBookId As Label
+    Friend WithEvents varBookLink As Label
 End Class

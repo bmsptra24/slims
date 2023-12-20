@@ -66,4 +66,8 @@ Public Class UserControlAccountManagement
         Dim userId As String = If(DataGridViewAccounts.Rows(e.RowIndex).Cells("id").Value IsNot Nothing, CStr(DataGridViewAccounts.Rows(e.RowIndex).Cells("id").Value), e.RowIndex.ToString())
         ClassUser.selectedUser = userId
     End Sub
+
+    Private Async Sub TextBoxSearch_TextChanged(sender As Object, e As EventArgs) Handles TextBoxSearch.TextChanged
+        Await ClassUser.showTable(Me)
+    End Sub
 End Class

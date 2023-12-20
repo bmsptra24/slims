@@ -5,18 +5,19 @@ Public Class UserControlABook
         Public Property id As Integer
         Public Property content As String
         Public Property createdAt As Date
-        Public Property userId As Guid
+        Public Property userId As String
         Public Property bookId As Integer
     End Class
 
     Public Class Book
         Public Property id As Integer
         Public Property author As String
-        Public Property coverId As String
+        Public Property cover As String
         Public Property createdAt As Date
         Public Property description As String
         Public Property publicationYear As String
         Public Property stock As Integer
+        Public Property linkPdf As String
         Public Property title As String
         Public Property Comment As List(Of Comment)
     End Class
@@ -36,8 +37,18 @@ Public Class UserControlABook
         memberControlBookDetail.LabelAuthor.Text = bookDetail.author
         memberControlBookDetail.LabelStock.Text = bookDetail.stock
         memberControlBookDetail.LabelDescription.Text = bookDetail.description
+        memberControlBookDetail.linkPdf = bookDetail.linkPdf
+        If bookDetail.linkPdf = "" Then
+            memberControlBookDetail.ButtonGetItNow.Visible = False
+        End If
 
-        Console.Write(json)
+        If String.IsNullOrEmpty(bookDetail.cover) Then
+            Await ClassAPI.GetImage(ClassConfiguration.coverDefaultLink, memberControlBookDetail.PictureBoxCover)
+        Else
+            memberControlBookDetail.PictureBoxCover.Image = ClassUtils.Base64StringToImage(bookDetail.cover)
+        End If
+
+        Console.WriteLine(json)
         For Each comment As Comment In bookDetail.Comment
             Dim jsonUser = Await ClassUser.FindUnique(comment.userId.ToString())
             Dim userData = JsonConvert.DeserializeObject(Of ClassUser.TUser)(jsonUser)

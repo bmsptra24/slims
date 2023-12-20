@@ -35,6 +35,8 @@ Public Class UserControlBorrowBooks
         Dim response = JsonConvert.DeserializeObject(Of Response)(json)
 
         If response.status = True Then
+            TextBoxIdBook.Text = ""
+            TextBoxIdMember.Text = ""
             MessageBox.Show("TBook borrowed successfully!")
         Else
             MessageBox.Show("TBook failed to borrow!")

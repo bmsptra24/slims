@@ -22,7 +22,6 @@ Partial Class FormAdmin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormAdmin))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
@@ -224,17 +223,17 @@ Partial Class FormAdmin
         Me.Panel3.Controls.Add(Me.statusUser)
         Me.Panel3.Controls.Add(Me.LabelUserName)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(45, 20)
+        Me.Panel3.Location = New System.Drawing.Point(50, 20)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(146, 45)
+        Me.Panel3.Size = New System.Drawing.Size(141, 45)
         Me.Panel3.TabIndex = 3
         '
         'PictureBox1
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Image = Global.SLIMS.My.Resources.Resources.log_out
         Me.PictureBox1.InitialImage = Nothing
-        Me.PictureBox1.Location = New System.Drawing.Point(111, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(106, 0)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(35, 45)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -269,7 +268,7 @@ Partial Class FormAdmin
         Me.PictureBoxProfilAdmin.InitialImage = Nothing
         Me.PictureBoxProfilAdmin.Location = New System.Drawing.Point(10, 20)
         Me.PictureBoxProfilAdmin.Name = "PictureBoxProfilAdmin"
-        Me.PictureBoxProfilAdmin.Size = New System.Drawing.Size(35, 45)
+        Me.PictureBoxProfilAdmin.Size = New System.Drawing.Size(40, 45)
         Me.PictureBoxProfilAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBoxProfilAdmin.TabIndex = 0
         Me.PictureBoxProfilAdmin.TabStop = False

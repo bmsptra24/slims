@@ -1,6 +1,7 @@
 ﻿Public Class MemberControlHistory
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-
+    Private Async Sub TextBoxSearch_TextChanged(sender As Object, e As EventArgs) Handles TextBoxSearch.TextChanged
+        Await ClassUser.showHistory(Me)
     End Sub
+
 End Class

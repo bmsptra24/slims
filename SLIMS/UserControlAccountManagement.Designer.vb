@@ -28,7 +28,7 @@ Partial Class UserControlAccountManagement
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBoxSearch = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.DataGridViewAccounts = New System.Windows.Forms.DataGridView()
@@ -99,14 +99,14 @@ Partial Class UserControlAccountManagement
         Me.Button1.Text = "Add"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'TextBox3
+        'TextBoxSearch
         '
-        Me.TextBox3.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(10, 32)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(1007, 27)
-        Me.TextBox3.TabIndex = 2
+        Me.TextBoxSearch.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.TextBoxSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxSearch.Location = New System.Drawing.Point(10, 32)
+        Me.TextBoxSearch.Name = "TextBoxSearch"
+        Me.TextBoxSearch.Size = New System.Drawing.Size(1007, 27)
+        Me.TextBoxSearch.TabIndex = 2
         '
         'Label6
         '
@@ -123,7 +123,7 @@ Partial Class UserControlAccountManagement
         '
         Me.Panel5.BackColor = System.Drawing.Color.White
         Me.Panel5.Controls.Add(Me.Label6)
-        Me.Panel5.Controls.Add(Me.TextBox3)
+        Me.Panel5.Controls.Add(Me.TextBoxSearch)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel5.Location = New System.Drawing.Point(0, 33)
         Me.Panel5.Name = "Panel5"
@@ -136,7 +136,6 @@ Partial Class UserControlAccountManagement
         Me.DataGridViewAccounts.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(235, Byte), Integer))
         Me.DataGridViewAccounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridViewAccounts.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridViewAccounts.Enabled = False
         Me.DataGridViewAccounts.Location = New System.Drawing.Point(0, 102)
         Me.DataGridViewAccounts.Name = "DataGridViewAccounts"
         Me.DataGridViewAccounts.Size = New System.Drawing.Size(1027, 506)
@@ -164,7 +163,7 @@ Partial Class UserControlAccountManagement
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBoxSearch As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
     Friend WithEvents DataGridViewAccounts As System.Windows.Forms.DataGridView

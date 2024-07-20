@@ -22,6 +22,7 @@ Partial Class FormAdmin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormAdmin))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
@@ -37,7 +38,7 @@ Partial Class FormAdmin
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.statusUser = New System.Windows.Forms.Label()
-        Me.LabelUserName = New System.Windows.Forms.Label()
+        Me.userName = New System.Windows.Forms.Label()
         Me.PictureBoxProfilAdmin = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -85,14 +86,13 @@ Partial Class FormAdmin
         '
         'SplitContainer1
         '
-        Me.SplitContainer1.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(235, Byte), Integer))
         Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SplitContainer1.Location = New System.Drawing.Point(0, 24)
         Me.SplitContainer1.Name = "SplitContainer1"
         '
         'SplitContainer1.Panel1
         '
-        Me.SplitContainer1.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.SplitContainer1.Panel1.BackColor = System.Drawing.Color.SlateBlue
         Me.SplitContainer1.Panel1.Controls.Add(Me.Panel2)
         Me.SplitContainer1.Panel1.Controls.Add(Me.Panel1)
         Me.SplitContainer1.Panel1.Padding = New System.Windows.Forms.Padding(10)
@@ -100,7 +100,7 @@ Partial Class FormAdmin
         'SplitContainer1.Panel2
         '
         Me.SplitContainer1.Panel2.AutoScroll = True
-        Me.SplitContainer1.Panel2.BackColor = System.Drawing.Color.White
+        Me.SplitContainer1.Panel2.BackColor = System.Drawing.Color.Lavender
         Me.SplitContainer1.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.SplitContainer1.Panel2.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.SplitContainer1.Panel2.Padding = New System.Windows.Forms.Padding(22, 22, 22, 10)
@@ -116,19 +116,18 @@ Partial Class FormAdmin
         Me.Panel2.Controls.Add(Me.btnBorrowBooks)
         Me.Panel2.Controls.Add(Me.btnDashboard)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(10, 97)
+        Me.Panel2.Location = New System.Drawing.Point(10, 89)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(201, 232)
         Me.Panel2.TabIndex = 5
         '
         'btnAccountManagement
         '
-        Me.btnAccountManagement.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.btnAccountManagement.BackColor = System.Drawing.Color.SlateBlue
         Me.btnAccountManagement.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnAccountManagement.FlatAppearance.BorderSize = 0
         Me.btnAccountManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAccountManagement.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAccountManagement.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.btnAccountManagement.ForeColor = System.Drawing.SystemColors.Control
         Me.btnAccountManagement.Location = New System.Drawing.Point(0, 172)
         Me.btnAccountManagement.Name = "btnAccountManagement"
         Me.btnAccountManagement.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
@@ -140,12 +139,11 @@ Partial Class FormAdmin
         '
         'btnBookManagement
         '
-        Me.btnBookManagement.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.btnBookManagement.BackColor = System.Drawing.Color.SlateBlue
         Me.btnBookManagement.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnBookManagement.FlatAppearance.BorderSize = 0
         Me.btnBookManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBookManagement.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBookManagement.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.btnBookManagement.ForeColor = System.Drawing.SystemColors.Control
         Me.btnBookManagement.Location = New System.Drawing.Point(0, 129)
         Me.btnBookManagement.Name = "btnBookManagement"
         Me.btnBookManagement.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
@@ -157,12 +155,11 @@ Partial Class FormAdmin
         '
         'btnReturnBooks
         '
-        Me.btnReturnBooks.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.btnReturnBooks.BackColor = System.Drawing.Color.SlateBlue
         Me.btnReturnBooks.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnReturnBooks.FlatAppearance.BorderSize = 0
         Me.btnReturnBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReturnBooks.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnReturnBooks.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.btnReturnBooks.ForeColor = System.Drawing.SystemColors.Control
         Me.btnReturnBooks.Location = New System.Drawing.Point(0, 86)
         Me.btnReturnBooks.Name = "btnReturnBooks"
         Me.btnReturnBooks.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
@@ -174,12 +171,11 @@ Partial Class FormAdmin
         '
         'btnBorrowBooks
         '
-        Me.btnBorrowBooks.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.btnBorrowBooks.BackColor = System.Drawing.Color.SlateBlue
         Me.btnBorrowBooks.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnBorrowBooks.FlatAppearance.BorderSize = 0
         Me.btnBorrowBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBorrowBooks.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBorrowBooks.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.btnBorrowBooks.ForeColor = System.Drawing.SystemColors.Control
         Me.btnBorrowBooks.Location = New System.Drawing.Point(0, 43)
         Me.btnBorrowBooks.Name = "btnBorrowBooks"
         Me.btnBorrowBooks.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
@@ -191,12 +187,11 @@ Partial Class FormAdmin
         '
         'btnDashboard
         '
-        Me.btnDashboard.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.btnDashboard.BackColor = System.Drawing.Color.Lavender
         Me.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnDashboard.FlatAppearance.BorderSize = 0
         Me.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDashboard.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDashboard.ForeColor = System.Drawing.Color.White
+        Me.btnDashboard.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnDashboard.Location = New System.Drawing.Point(0, 0)
         Me.btnDashboard.Name = "btnDashboard"
         Me.btnDashboard.Padding = New System.Windows.Forms.Padding(10, 0, 0, 0)
@@ -214,28 +209,28 @@ Partial Class FormAdmin
         Me.Panel1.Location = New System.Drawing.Point(10, 10)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Padding = New System.Windows.Forms.Padding(10, 20, 10, 22)
-        Me.Panel1.Size = New System.Drawing.Size(201, 87)
+        Me.Panel1.Size = New System.Drawing.Size(201, 79)
         Me.Panel1.TabIndex = 4
         '
         'Panel3
         '
         Me.Panel3.Controls.Add(Me.PictureBox1)
         Me.Panel3.Controls.Add(Me.statusUser)
-        Me.Panel3.Controls.Add(Me.LabelUserName)
+        Me.Panel3.Controls.Add(Me.userName)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(50, 20)
+        Me.Panel3.Location = New System.Drawing.Point(45, 20)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(141, 45)
+        Me.Panel3.Size = New System.Drawing.Size(146, 37)
         Me.Panel3.TabIndex = 3
         '
         'PictureBox1
         '
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PictureBox1.Image = Global.SLIMS.My.Resources.Resources.log_out
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.InitialImage = Nothing
-        Me.PictureBox1.Location = New System.Drawing.Point(106, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(111, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(35, 45)
+        Me.PictureBox1.Size = New System.Drawing.Size(35, 37)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -243,24 +238,22 @@ Partial Class FormAdmin
         'statusUser
         '
         Me.statusUser.AutoSize = True
-        Me.statusUser.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.statusUser.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.statusUser.ForeColor = System.Drawing.SystemColors.Control
         Me.statusUser.Location = New System.Drawing.Point(11, 24)
         Me.statusUser.Name = "statusUser"
-        Me.statusUser.Size = New System.Drawing.Size(55, 18)
+        Me.statusUser.Size = New System.Drawing.Size(36, 13)
         Me.statusUser.TabIndex = 2
         Me.statusUser.Text = "Admin"
         '
-        'LabelUserName
+        'userName
         '
-        Me.LabelUserName.AutoSize = True
-        Me.LabelUserName.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelUserName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(53, Byte), Integer))
-        Me.LabelUserName.Location = New System.Drawing.Point(11, 2)
-        Me.LabelUserName.Name = "LabelUserName"
-        Me.LabelUserName.Size = New System.Drawing.Size(88, 18)
-        Me.LabelUserName.TabIndex = 1
-        Me.LabelUserName.Text = "User Name"
+        Me.userName.AutoSize = True
+        Me.userName.ForeColor = System.Drawing.SystemColors.Control
+        Me.userName.Location = New System.Drawing.Point(11, 2)
+        Me.userName.Name = "userName"
+        Me.userName.Size = New System.Drawing.Size(60, 13)
+        Me.userName.TabIndex = 1
+        Me.userName.Text = "User Name"
         '
         'PictureBoxProfilAdmin
         '
@@ -268,7 +261,7 @@ Partial Class FormAdmin
         Me.PictureBoxProfilAdmin.InitialImage = Nothing
         Me.PictureBoxProfilAdmin.Location = New System.Drawing.Point(10, 20)
         Me.PictureBoxProfilAdmin.Name = "PictureBoxProfilAdmin"
-        Me.PictureBoxProfilAdmin.Size = New System.Drawing.Size(40, 45)
+        Me.PictureBoxProfilAdmin.Size = New System.Drawing.Size(35, 37)
         Me.PictureBoxProfilAdmin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBoxProfilAdmin.TabIndex = 0
         Me.PictureBoxProfilAdmin.TabStop = False
@@ -312,7 +305,7 @@ Partial Class FormAdmin
     Friend WithEvents btnDashboard As System.Windows.Forms.Button
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents statusUser As System.Windows.Forms.Label
-    Friend WithEvents LabelUserName As System.Windows.Forms.Label
+    Friend WithEvents userName As System.Windows.Forms.Label
     Friend WithEvents PictureBoxProfilAdmin As System.Windows.Forms.PictureBox
     Friend WithEvents btnAccountManagement As System.Windows.Forms.Button
     Friend WithEvents btnBookManagement As System.Windows.Forms.Button

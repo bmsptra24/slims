@@ -1,4 +1,7 @@
-﻿Public Class ClassNavigation
+﻿Imports System.Net
+Imports System.IO
+
+Public Class ClassNavigation
     ' change control
     Public Shared Function changeControl(UserControl, Container)
         Container.Controls.Clear()

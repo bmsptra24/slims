@@ -36,46 +36,46 @@ Partial Class UserControlDashboard
         Dim Legend4 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.ChartMember = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.ChartBooks = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.Chart2 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.ChartBorrowed = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.Chart3 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Panel13 = New System.Windows.Forms.Panel()
         Me.Panel12 = New System.Windows.Forms.Panel()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.LabelReturned = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel16 = New System.Windows.Forms.Panel()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.LabelBorrowed = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.PanelDashboard = New System.Windows.Forms.Panel()
         Me.Panel14 = New System.Windows.Forms.Panel()
-        Me.ChartReturned = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.Chart4 = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Panel15 = New System.Windows.Forms.Panel()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.LabelAccounts = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.LabelBooks = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
-        CType(Me.ChartMember, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel7.SuspendLayout()
         Me.Panel8.SuspendLayout()
-        CType(Me.ChartBooks, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel11.SuspendLayout()
         Me.Panel10.SuspendLayout()
-        CType(Me.ChartBorrowed, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Chart3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel13.SuspendLayout()
         Me.Panel12.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -83,7 +83,7 @@ Partial Class UserControlDashboard
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelDashboard.SuspendLayout()
         Me.Panel14.SuspendLayout()
-        CType(Me.ChartReturned, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Chart4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel15.SuspendLayout()
         Me.FlowLayoutPanel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -98,24 +98,23 @@ Partial Class UserControlDashboard
         resources.ApplyResources(Me.Label10, "Label10")
         Me.Label10.Name = "Label10"
         '
-        'ChartMember
+        'Chart1
         '
         ChartArea1.Name = "ChartArea1"
-        Me.ChartMember.ChartAreas.Add(ChartArea1)
-        resources.ApplyResources(Me.ChartMember, "ChartMember")
+        Me.Chart1.ChartAreas.Add(ChartArea1)
+        resources.ApplyResources(Me.Chart1, "Chart1")
         Legend1.Name = "Legend1"
-        Me.ChartMember.Legends.Add(Legend1)
-        Me.ChartMember.Name = "ChartMember"
+        Me.Chart1.Legends.Add(Legend1)
+        Me.Chart1.Name = "Chart1"
         Series1.ChartArea = "ChartArea1"
         Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
         Series1.Legend = "Legend1"
         Series1.Name = "Series1"
-        Me.ChartMember.Series.Add(Series1)
+        Me.Chart1.Series.Add(Series1)
         '
         'Panel7
         '
-        Me.Panel7.BackColor = System.Drawing.Color.White
-        Me.Panel7.Controls.Add(Me.ChartMember)
+        Me.Panel7.Controls.Add(Me.Chart1)
         Me.Panel7.Controls.Add(Me.Panel8)
         resources.ApplyResources(Me.Panel7, "Panel7")
         Me.Panel7.Name = "Panel7"
@@ -131,19 +130,19 @@ Partial Class UserControlDashboard
         resources.ApplyResources(Me.Label11, "Label11")
         Me.Label11.Name = "Label11"
         '
-        'ChartBooks
+        'Chart2
         '
         ChartArea2.Name = "ChartArea1"
-        Me.ChartBooks.ChartAreas.Add(ChartArea2)
-        resources.ApplyResources(Me.ChartBooks, "ChartBooks")
+        Me.Chart2.ChartAreas.Add(ChartArea2)
+        resources.ApplyResources(Me.Chart2, "Chart2")
         Legend2.Name = "Legend1"
-        Me.ChartBooks.Legends.Add(Legend2)
-        Me.ChartBooks.Name = "ChartBooks"
+        Me.Chart2.Legends.Add(Legend2)
+        Me.Chart2.Name = "Chart2"
         Series2.ChartArea = "ChartArea1"
         Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
         Series2.Legend = "Legend1"
         Series2.Name = "Series1"
-        Me.ChartBooks.Series.Add(Series2)
+        Me.Chart2.Series.Add(Series2)
         '
         'Panel11
         '
@@ -153,8 +152,7 @@ Partial Class UserControlDashboard
         '
         'Panel10
         '
-        Me.Panel10.BackColor = System.Drawing.Color.White
-        Me.Panel10.Controls.Add(Me.ChartBooks)
+        Me.Panel10.Controls.Add(Me.Chart2)
         Me.Panel10.Controls.Add(Me.Panel11)
         resources.ApplyResources(Me.Panel10, "Panel10")
         Me.Panel10.Name = "Panel10"
@@ -164,19 +162,19 @@ Partial Class UserControlDashboard
         resources.ApplyResources(Me.Label12, "Label12")
         Me.Label12.Name = "Label12"
         '
-        'ChartBorrowed
+        'Chart3
         '
         ChartArea3.Name = "ChartArea1"
-        Me.ChartBorrowed.ChartAreas.Add(ChartArea3)
-        resources.ApplyResources(Me.ChartBorrowed, "ChartBorrowed")
+        Me.Chart3.ChartAreas.Add(ChartArea3)
+        resources.ApplyResources(Me.Chart3, "Chart3")
         Legend3.Name = "Legend1"
-        Me.ChartBorrowed.Legends.Add(Legend3)
-        Me.ChartBorrowed.Name = "ChartBorrowed"
+        Me.Chart3.Legends.Add(Legend3)
+        Me.Chart3.Name = "Chart3"
         Series3.ChartArea = "ChartArea1"
         Series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
         Series3.Legend = "Legend1"
         Series3.Name = "Series1"
-        Me.ChartBorrowed.Series.Add(Series3)
+        Me.Chart3.Series.Add(Series3)
         '
         'Panel13
         '
@@ -186,8 +184,7 @@ Partial Class UserControlDashboard
         '
         'Panel12
         '
-        Me.Panel12.BackColor = System.Drawing.Color.White
-        Me.Panel12.Controls.Add(Me.ChartBorrowed)
+        Me.Panel12.Controls.Add(Me.Chart3)
         Me.Panel12.Controls.Add(Me.Panel13)
         resources.ApplyResources(Me.Panel12, "Panel12")
         Me.Panel12.Name = "Panel12"
@@ -198,10 +195,10 @@ Partial Class UserControlDashboard
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.TabStop = False
         '
-        'LabelReturned
+        'Label8
         '
-        resources.ApplyResources(Me.LabelReturned, "LabelReturned")
-        Me.LabelReturned.Name = "LabelReturned"
+        resources.ApplyResources(Me.Label8, "Label8")
+        Me.Label8.Name = "Label8"
         '
         'Label9
         '
@@ -212,7 +209,7 @@ Partial Class UserControlDashboard
         '
         Me.Panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel16.Controls.Add(Me.PictureBox5)
-        Me.Panel16.Controls.Add(Me.LabelReturned)
+        Me.Panel16.Controls.Add(Me.Label8)
         Me.Panel16.Controls.Add(Me.Label9)
         resources.ApplyResources(Me.Panel16, "Panel16")
         Me.Panel16.Name = "Panel16"
@@ -223,10 +220,10 @@ Partial Class UserControlDashboard
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.TabStop = False
         '
-        'LabelBorrowed
+        'Label6
         '
-        resources.ApplyResources(Me.LabelBorrowed, "LabelBorrowed")
-        Me.LabelBorrowed.Name = "LabelBorrowed"
+        resources.ApplyResources(Me.Label6, "Label6")
+        Me.Label6.Name = "Label6"
         '
         'PanelDashboard
         '
@@ -240,25 +237,24 @@ Partial Class UserControlDashboard
         '
         'Panel14
         '
-        Me.Panel14.BackColor = System.Drawing.Color.White
-        Me.Panel14.Controls.Add(Me.ChartReturned)
+        Me.Panel14.Controls.Add(Me.Chart4)
         Me.Panel14.Controls.Add(Me.Panel15)
         resources.ApplyResources(Me.Panel14, "Panel14")
         Me.Panel14.Name = "Panel14"
         '
-        'ChartReturned
+        'Chart4
         '
         ChartArea4.Name = "ChartArea1"
-        Me.ChartReturned.ChartAreas.Add(ChartArea4)
-        resources.ApplyResources(Me.ChartReturned, "ChartReturned")
+        Me.Chart4.ChartAreas.Add(ChartArea4)
+        resources.ApplyResources(Me.Chart4, "Chart4")
         Legend4.Name = "Legend1"
-        Me.ChartReturned.Legends.Add(Legend4)
-        Me.ChartReturned.Name = "ChartReturned"
+        Me.Chart4.Legends.Add(Legend4)
+        Me.Chart4.Name = "Chart4"
         Series4.ChartArea = "ChartArea1"
         Series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
         Series4.Legend = "Legend1"
         Series4.Name = "Series1"
-        Me.ChartReturned.Series.Add(Series4)
+        Me.Chart4.Series.Add(Series4)
         '
         'Panel15
         '
@@ -274,7 +270,6 @@ Partial Class UserControlDashboard
         'FlowLayoutPanel1
         '
         resources.ApplyResources(Me.FlowLayoutPanel1, "FlowLayoutPanel1")
-        Me.FlowLayoutPanel1.BackColor = System.Drawing.Color.White
         Me.FlowLayoutPanel1.Controls.Add(Me.Panel4)
         Me.FlowLayoutPanel1.Controls.Add(Me.Panel5)
         Me.FlowLayoutPanel1.Controls.Add(Me.Panel6)
@@ -285,7 +280,7 @@ Partial Class UserControlDashboard
         '
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel4.Controls.Add(Me.PictureBox3)
-        Me.Panel4.Controls.Add(Me.LabelAccounts)
+        Me.Panel4.Controls.Add(Me.Label4)
         Me.Panel4.Controls.Add(Me.Label5)
         resources.ApplyResources(Me.Panel4, "Panel4")
         Me.Panel4.Name = "Panel4"
@@ -296,10 +291,10 @@ Partial Class UserControlDashboard
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.TabStop = False
         '
-        'LabelAccounts
+        'Label4
         '
-        resources.ApplyResources(Me.LabelAccounts, "LabelAccounts")
-        Me.LabelAccounts.Name = "LabelAccounts"
+        resources.ApplyResources(Me.Label4, "Label4")
+        Me.Label4.Name = "Label4"
         '
         'Label5
         '
@@ -310,7 +305,7 @@ Partial Class UserControlDashboard
         '
         Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel5.Controls.Add(Me.PictureBox2)
-        Me.Panel5.Controls.Add(Me.LabelBooks)
+        Me.Panel5.Controls.Add(Me.Label3)
         Me.Panel5.Controls.Add(Me.Label2)
         resources.ApplyResources(Me.Panel5, "Panel5")
         Me.Panel5.Name = "Panel5"
@@ -321,10 +316,10 @@ Partial Class UserControlDashboard
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.TabStop = False
         '
-        'LabelBooks
+        'Label3
         '
-        resources.ApplyResources(Me.LabelBooks, "LabelBooks")
-        Me.LabelBooks.Name = "LabelBooks"
+        resources.ApplyResources(Me.Label3, "Label3")
+        Me.Label3.Name = "Label3"
         '
         'Label2
         '
@@ -335,7 +330,7 @@ Partial Class UserControlDashboard
         '
         Me.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel6.Controls.Add(Me.PictureBox4)
-        Me.Panel6.Controls.Add(Me.LabelBorrowed)
+        Me.Panel6.Controls.Add(Me.Label6)
         Me.Panel6.Controls.Add(Me.Label7)
         resources.ApplyResources(Me.Panel6, "Panel6")
         Me.Panel6.Name = "Panel6"
@@ -353,15 +348,15 @@ Partial Class UserControlDashboard
         Me.Controls.Add(Me.PanelDashboard)
         Me.DoubleBuffered = True
         Me.Name = "UserControlDashboard"
-        CType(Me.ChartMember, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel7.ResumeLayout(False)
         Me.Panel8.ResumeLayout(False)
         Me.Panel8.PerformLayout()
-        CType(Me.ChartBooks, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Chart2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel11.ResumeLayout(False)
         Me.Panel11.PerformLayout()
         Me.Panel10.ResumeLayout(False)
-        CType(Me.ChartBorrowed, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Chart3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel13.ResumeLayout(False)
         Me.Panel13.PerformLayout()
         Me.Panel12.ResumeLayout(False)
@@ -372,7 +367,7 @@ Partial Class UserControlDashboard
         Me.PanelDashboard.ResumeLayout(False)
         Me.PanelDashboard.PerformLayout()
         Me.Panel14.ResumeLayout(False)
-        CType(Me.ChartReturned, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Chart4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel15.ResumeLayout(False)
         Me.Panel15.PerformLayout()
         Me.FlowLayoutPanel1.ResumeLayout(False)
@@ -388,36 +383,36 @@ Partial Class UserControlDashboard
 
     End Sub
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents ChartMember As System.Windows.Forms.DataVisualization.Charting.Chart
+    Friend WithEvents Chart1 As System.Windows.Forms.DataVisualization.Charting.Chart
     Friend WithEvents Panel7 As System.Windows.Forms.Panel
     Friend WithEvents Panel8 As System.Windows.Forms.Panel
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents ChartBooks As System.Windows.Forms.DataVisualization.Charting.Chart
+    Friend WithEvents Chart2 As System.Windows.Forms.DataVisualization.Charting.Chart
     Friend WithEvents Panel11 As System.Windows.Forms.Panel
     Friend WithEvents Panel10 As System.Windows.Forms.Panel
     Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents ChartBorrowed As System.Windows.Forms.DataVisualization.Charting.Chart
+    Friend WithEvents Chart3 As System.Windows.Forms.DataVisualization.Charting.Chart
     Friend WithEvents Panel13 As System.Windows.Forms.Panel
     Friend WithEvents Panel12 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
-    Friend WithEvents LabelReturned As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Panel16 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
-    Friend WithEvents LabelBorrowed As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents PanelDashboard As System.Windows.Forms.Panel
     Friend WithEvents Panel14 As System.Windows.Forms.Panel
-    Friend WithEvents ChartReturned As System.Windows.Forms.DataVisualization.Charting.Chart
+    Friend WithEvents Chart4 As System.Windows.Forms.DataVisualization.Charting.Chart
     Friend WithEvents Panel15 As System.Windows.Forms.Panel
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents FlowLayoutPanel1 As System.Windows.Forms.FlowLayoutPanel
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
-    Friend WithEvents LabelAccounts As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents LabelBooks As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Panel6 As System.Windows.Forms.Panel
     Friend WithEvents Label7 As System.Windows.Forms.Label

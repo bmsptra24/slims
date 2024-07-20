@@ -37,18 +37,18 @@ Partial Class AskAIControlUser
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Padding = New System.Windows.Forms.Padding(5, 5, 5, 15)
-        Me.Panel3.Size = New System.Drawing.Size(195, 71)
+        Me.Panel3.Size = New System.Drawing.Size(195, 59)
         Me.Panel3.TabIndex = 2
         '
         'LabelAnswer
         '
         Me.LabelAnswer.AutoSize = True
         Me.LabelAnswer.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LabelAnswer.Font = New System.Drawing.Font("Georgia", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelAnswer.Location = New System.Drawing.Point(5, 22)
+        Me.LabelAnswer.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelAnswer.Location = New System.Drawing.Point(5, 18)
         Me.LabelAnswer.MaximumSize = New System.Drawing.Size(190, 0)
         Me.LabelAnswer.Name = "LabelAnswer"
-        Me.LabelAnswer.Size = New System.Drawing.Size(135, 34)
+        Me.LabelAnswer.Size = New System.Drawing.Size(163, 26)
         Me.LabelAnswer.TabIndex = 3
         Me.LabelAnswer.Text = "What the best web programming book?"
         Me.LabelAnswer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -57,10 +57,10 @@ Partial Class AskAIControlUser
         '
         Me.Label3.AutoSize = True
         Me.Label3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Label3.Font = New System.Drawing.Font("Georgia", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(5, 5)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(41, 17)
+        Me.Label3.Size = New System.Drawing.Size(33, 13)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "User"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopRight

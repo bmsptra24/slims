@@ -127,13 +127,13 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Label10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Georgia, 13pt</value>
+    <value>Microsoft Sans Serif, 13pt</value>
   </data>
   <data name="Label10.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="Label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 21</value>
+    <value>83, 22</value>
   </data>
   <data name="Label10.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -153,31 +153,31 @@
   <data name="&gt;&gt;Label10.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="ChartMember.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="Chart1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="ChartMember.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Chart1.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 46</value>
   </data>
-  <data name="ChartMember.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Chart1.Size" type="System.Drawing.Size, System.Drawing">
     <value>990, 256</value>
   </data>
-  <data name="ChartMember.TabIndex" type="System.Int32, mscorlib">
+  <data name="Chart1.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="ChartMember.Text" xml:space="preserve">
+  <data name="Chart1.Text" xml:space="preserve">
     <value>Chart1</value>
   </data>
-  <data name="&gt;&gt;ChartMember.Name" xml:space="preserve">
-    <value>ChartMember</value>
+  <data name="&gt;&gt;Chart1.Name" xml:space="preserve">
+    <value>Chart1</value>
   </data>
-  <data name="&gt;&gt;ChartMember.Type" xml:space="preserve">
+  <data name="&gt;&gt;Chart1.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
   </data>
-  <data name="&gt;&gt;ChartMember.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Chart1.Parent" xml:space="preserve">
     <value>Panel7</value>
   </data>
-  <data name="&gt;&gt;ChartMember.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Chart1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="Panel8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -238,13 +238,13 @@
     <value>Top</value>
   </data>
   <data name="Label11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Georgia, 13pt</value>
+    <value>Microsoft Sans Serif, 13pt</value>
   </data>
   <data name="Label11.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="Label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 21</value>
+    <value>60, 22</value>
   </data>
   <data name="Label11.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -264,31 +264,31 @@
   <data name="&gt;&gt;Label11.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="ChartBooks.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="Chart2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="ChartBooks.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Chart2.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 46</value>
   </data>
-  <data name="ChartBooks.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Chart2.Size" type="System.Drawing.Size, System.Drawing">
     <value>990, 256</value>
   </data>
-  <data name="ChartBooks.TabIndex" type="System.Int32, mscorlib">
+  <data name="Chart2.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="ChartBooks.Text" xml:space="preserve">
+  <data name="Chart2.Text" xml:space="preserve">
     <value>Chart1</value>
   </data>
-  <data name="&gt;&gt;ChartBooks.Name" xml:space="preserve">
-    <value>ChartBooks</value>
+  <data name="&gt;&gt;Chart2.Name" xml:space="preserve">
+    <value>Chart2</value>
   </data>
-  <data name="&gt;&gt;ChartBooks.Type" xml:space="preserve">
+  <data name="&gt;&gt;Chart2.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
   </data>
-  <data name="&gt;&gt;ChartBooks.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Chart2.Parent" xml:space="preserve">
     <value>Panel10</value>
   </data>
-  <data name="&gt;&gt;ChartBooks.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Chart2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="Panel11.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -349,13 +349,13 @@
     <value>Top</value>
   </data>
   <data name="Label12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Georgia, 13pt</value>
+    <value>Microsoft Sans Serif, 13pt</value>
   </data>
   <data name="Label12.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="Label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 21</value>
+    <value>87, 22</value>
   </data>
   <data name="Label12.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -375,31 +375,31 @@
   <data name="&gt;&gt;Label12.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="ChartBorrowed.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="Chart3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="ChartBorrowed.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Chart3.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 46</value>
   </data>
-  <data name="ChartBorrowed.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Chart3.Size" type="System.Drawing.Size, System.Drawing">
     <value>990, 256</value>
   </data>
-  <data name="ChartBorrowed.TabIndex" type="System.Int32, mscorlib">
+  <data name="Chart3.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="ChartBorrowed.Text" xml:space="preserve">
+  <data name="Chart3.Text" xml:space="preserve">
     <value>Chart1</value>
   </data>
-  <data name="&gt;&gt;ChartBorrowed.Name" xml:space="preserve">
-    <value>ChartBorrowed</value>
+  <data name="&gt;&gt;Chart3.Name" xml:space="preserve">
+    <value>Chart3</value>
   </data>
-  <data name="&gt;&gt;ChartBorrowed.Type" xml:space="preserve">
+  <data name="&gt;&gt;Chart3.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
   </data>
-  <data name="&gt;&gt;ChartBorrowed.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Chart3.Parent" xml:space="preserve">
     <value>Panel12</value>
   </data>
-  <data name="&gt;&gt;ChartBorrowed.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Chart3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="Panel13.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -456,7 +456,7 @@
   <data name="PictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACQrSURBVHhe7d0L
+        wwAADsMBx2+oZAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACQrSURBVHhe7d0L
         tCR3XSfwSkIeCK4S1KPuushTWVx1EdSFACKichRUYnytouuug4sEAgQy09UDl4BsQAJGQAhB3YMaBB/o
         gktehCQkBhFUzgKBTN4JM7eq5pl5kLnz6K3q+Q876f5nMndu36quqs/3nA8Tft23H1X/qt//3q6uSkSm
         sm7TNyfrNz81GRQ/lQyyFyXD4hXJMH9j+d/vSQb5X5f/fU2S5p8pfal0a+m20tZgV2kEzFy1bR3ezqrt
@@ -638,41 +638,41 @@
   <data name="&gt;&gt;PictureBox5.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="LabelReturned.AutoSize" type="System.Boolean, mscorlib">
+  <data name="Label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="LabelReturned.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Georgia, 31pt</value>
+  <data name="Label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 31pt</value>
   </data>
-  <data name="LabelReturned.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Label8.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 47</value>
   </data>
-  <data name="LabelReturned.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 48</value>
+  <data name="Label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 48</value>
   </data>
-  <data name="LabelReturned.TabIndex" type="System.Int32, mscorlib">
+  <data name="Label8.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="LabelReturned.Text" xml:space="preserve">
-    <value>-</value>
+  <data name="Label8.Text" xml:space="preserve">
+    <value>29</value>
   </data>
-  <data name="&gt;&gt;LabelReturned.Name" xml:space="preserve">
-    <value>LabelReturned</value>
+  <data name="&gt;&gt;Label8.Name" xml:space="preserve">
+    <value>Label8</value>
   </data>
-  <data name="&gt;&gt;LabelReturned.Type" xml:space="preserve">
+  <data name="&gt;&gt;Label8.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;LabelReturned.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Label8.Parent" xml:space="preserve">
     <value>Panel16</value>
   </data>
-  <data name="&gt;&gt;LabelReturned.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Label8.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="Label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="Label9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Georgia, 13pt</value>
+    <value>Microsoft Sans Serif, 13pt</value>
   </data>
   <data name="Label9.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -681,7 +681,7 @@
     <value>57, 19</value>
   </data>
   <data name="Label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 21</value>
+    <value>84, 22</value>
   </data>
   <data name="Label9.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -728,7 +728,7 @@
   <data name="PictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACQqSURBVHhe7d0J
+        wwAADsMBx2+oZAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACQqSURBVHhe7d0J
         tCV3XSfwSkIWBEcJ6lFnHGRVBkcdBHUggIioHAWVGLdRdJwxOEggQCDdt27DIyATkIAREEJQ56AGwQUd
         cMhGSEJiEEHlDBBIZ09Iv6rqJZ1eSF4vd6pu/5vp3PtPp1+/92r9fM/50OF377tL1b/q93/v1q1KROay
         ftM3Jxs2PzUZFT+VjLIXJePiFck4f2P53+9JRvlfl/99ZZLmnyl9qXRT6ebS1mBnaQKsumrbOridVdtd
@@ -910,34 +910,34 @@
   <data name="&gt;&gt;PictureBox4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="LabelBorrowed.AutoSize" type="System.Boolean, mscorlib">
+  <data name="Label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="LabelBorrowed.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Georgia, 31pt</value>
+  <data name="Label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 31pt</value>
   </data>
-  <data name="LabelBorrowed.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 47</value>
   </data>
-  <data name="LabelBorrowed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 48</value>
+  <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 48</value>
   </data>
-  <data name="LabelBorrowed.TabIndex" type="System.Int32, mscorlib">
+  <data name="Label6.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="LabelBorrowed.Text" xml:space="preserve">
-    <value>-</value>
+  <data name="Label6.Text" xml:space="preserve">
+    <value>87</value>
   </data>
-  <data name="&gt;&gt;LabelBorrowed.Name" xml:space="preserve">
-    <value>LabelBorrowed</value>
+  <data name="&gt;&gt;Label6.Name" xml:space="preserve">
+    <value>Label6</value>
   </data>
-  <data name="&gt;&gt;LabelBorrowed.Type" xml:space="preserve">
+  <data name="&gt;&gt;Label6.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;LabelBorrowed.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Label6.Parent" xml:space="preserve">
     <value>Panel6</value>
   </data>
-  <data name="&gt;&gt;LabelBorrowed.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Label6.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="PanelDashboard.AutoScroll" type="System.Boolean, mscorlib">
@@ -946,31 +946,31 @@
   <data name="PanelDashboard.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
-  <data name="ChartReturned.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="Chart4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="ChartReturned.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Chart4.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 46</value>
   </data>
-  <data name="ChartReturned.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Chart4.Size" type="System.Drawing.Size, System.Drawing">
     <value>990, 256</value>
   </data>
-  <data name="ChartReturned.TabIndex" type="System.Int32, mscorlib">
+  <data name="Chart4.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="ChartReturned.Text" xml:space="preserve">
+  <data name="Chart4.Text" xml:space="preserve">
     <value>Chart1</value>
   </data>
-  <data name="&gt;&gt;ChartReturned.Name" xml:space="preserve">
-    <value>ChartReturned</value>
+  <data name="&gt;&gt;Chart4.Name" xml:space="preserve">
+    <value>Chart4</value>
   </data>
-  <data name="&gt;&gt;ChartReturned.Type" xml:space="preserve">
+  <data name="&gt;&gt;Chart4.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
   </data>
-  <data name="&gt;&gt;ChartReturned.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Chart4.Parent" xml:space="preserve">
     <value>Panel14</value>
   </data>
-  <data name="&gt;&gt;ChartReturned.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Chart4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="Label13.AutoSize" type="System.Boolean, mscorlib">
@@ -980,13 +980,13 @@
     <value>Top</value>
   </data>
   <data name="Label13.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Georgia, 13pt</value>
+    <value>Microsoft Sans Serif, 13pt</value>
   </data>
   <data name="Label13.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="Label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 21</value>
+    <value>84, 22</value>
   </data>
   <data name="Label13.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1063,7 +1063,7 @@
   <data name="PictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAEyfSURBVHhe7d0J
+        xAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAEyfSURBVHhe7d0J
         lFTlnf7xZk3bG0iMGRNjdyHBNZrEJDPJP5MZJ8lkkqi4mxgUF1RciQqogNIINE3v+wLIvlU1iywiCAiI
         DRp3RFnEXYhL3JUgSP/+9zYvoan6QW9Vdd+q+j7nfE48M2ecHKWf53bVve9NIoTYHak9q4vM/t53ZI7v
         TKnz/a/4fZdKwHe9+LPukkDWWKnLqnbMcv56oQQyVzj/ud753z/t/PUrzl+/7vgoyB6HNBqXZHQQKejY
@@ -1418,41 +1418,41 @@
   <data name="&gt;&gt;PictureBox3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="LabelAccounts.AutoSize" type="System.Boolean, mscorlib">
+  <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="LabelAccounts.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Georgia, 31pt</value>
+  <data name="Label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 31pt</value>
   </data>
-  <data name="LabelAccounts.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 47</value>
   </data>
-  <data name="LabelAccounts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 48</value>
+  <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 48</value>
   </data>
-  <data name="LabelAccounts.TabIndex" type="System.Int32, mscorlib">
+  <data name="Label4.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="LabelAccounts.Text" xml:space="preserve">
-    <value>-</value>
+  <data name="Label4.Text" xml:space="preserve">
+    <value>320</value>
   </data>
-  <data name="&gt;&gt;LabelAccounts.Name" xml:space="preserve">
-    <value>LabelAccounts</value>
+  <data name="&gt;&gt;Label4.Name" xml:space="preserve">
+    <value>Label4</value>
   </data>
-  <data name="&gt;&gt;LabelAccounts.Type" xml:space="preserve">
+  <data name="&gt;&gt;Label4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;LabelAccounts.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Label4.Parent" xml:space="preserve">
     <value>Panel4</value>
   </data>
-  <data name="&gt;&gt;LabelAccounts.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="Label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="Label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Georgia, 13pt</value>
+    <value>Microsoft Sans Serif, 13pt</value>
   </data>
   <data name="Label5.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -1461,7 +1461,7 @@
     <value>57, 19</value>
   </data>
   <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 21</value>
+    <value>84, 22</value>
   </data>
   <data name="Label5.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1508,7 +1508,7 @@
   <data name="PictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAEIRSURBVHhe7d0J
+        xAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAEIRSURBVHhe7d0J
         lB1lnffxFjAbIRuddHcCCorLEAy5VYG8EZc44+C4gkgARx1EX8RxQcYFHGfOGMcNFbMnne4EIog4c7l1
         mwjDjAviDkk6nV7SAScm6apqEcO+hTVdb1Wehzex8iTp5S5P/e/3d87ncM6oTPfte+v36+p7q+oIIXan
         pd196fogN72tf/bsmwP37ILvXOD5zseKfu6qYpj7ZiFwm4uBe5MXOOtjP43/s9/F/2yPbY/tij2c8lws
@@ -1818,41 +1818,41 @@
   <data name="&gt;&gt;PictureBox2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="LabelBooks.AutoSize" type="System.Boolean, mscorlib">
+  <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="LabelBooks.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Georgia, 31pt</value>
+  <data name="Label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 31pt</value>
   </data>
-  <data name="LabelBooks.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 47</value>
   </data>
-  <data name="LabelBooks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 48</value>
+  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 48</value>
   </data>
-  <data name="LabelBooks.TabIndex" type="System.Int32, mscorlib">
+  <data name="Label3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="LabelBooks.Text" xml:space="preserve">
-    <value>-</value>
+  <data name="Label3.Text" xml:space="preserve">
+    <value>120</value>
   </data>
-  <data name="&gt;&gt;LabelBooks.Name" xml:space="preserve">
-    <value>LabelBooks</value>
+  <data name="&gt;&gt;Label3.Name" xml:space="preserve">
+    <value>Label3</value>
   </data>
-  <data name="&gt;&gt;LabelBooks.Type" xml:space="preserve">
+  <data name="&gt;&gt;Label3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;LabelBooks.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Label3.Parent" xml:space="preserve">
     <value>Panel5</value>
   </data>
-  <data name="&gt;&gt;LabelBooks.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Georgia, 13pt</value>
+    <value>Microsoft Sans Serif, 13pt</value>
   </data>
   <data name="Label2.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -1861,7 +1861,7 @@
     <value>57, 19</value>
   </data>
   <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 21</value>
+    <value>60, 22</value>
   </data>
   <data name="Label2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1909,7 +1909,7 @@
     <value>True</value>
   </data>
   <data name="Label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Georgia, 13pt</value>
+    <value>Microsoft Sans Serif, 13pt</value>
   </data>
   <data name="Label7.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -1918,7 +1918,7 @@
     <value>57, 19</value>
   </data>
   <data name="Label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 21</value>
+    <value>87, 22</value>
   </data>
   <data name="Label7.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>

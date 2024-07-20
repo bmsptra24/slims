@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class UserControlBorrowBooks
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class UserControlBorrowBooks
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBoxIdMember = New System.Windows.Forms.TextBox()
@@ -34,13 +34,12 @@ Partial Class UserControlBorrowBooks
         Me.TextBoxIdBook = New System.Windows.Forms.TextBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.LabelIsBookAvaible = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.MonthCalendarDeadline = New System.Windows.Forms.MonthCalendar()
+        Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ButtonDone = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -57,11 +56,10 @@ Partial Class UserControlBorrowBooks
         '
         Me.Label1.AutoSize = True
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label1.Font = New System.Drawing.Font("Georgia", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(0, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(123, 21)
+        Me.Label1.Size = New System.Drawing.Size(122, 22)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Borrow Books"
         '
@@ -88,11 +86,9 @@ Partial Class UserControlBorrowBooks
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Georgia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(53, Byte), Integer))
         Me.Label5.Location = New System.Drawing.Point(3, 42)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(69, 14)
+        Me.Label5.Size = New System.Drawing.Size(59, 13)
         Me.Label5.TabIndex = 2
         Me.Label5.Text = "Member ID"
         '
@@ -118,11 +114,9 @@ Partial Class UserControlBorrowBooks
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Georgia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(53, Byte), Integer))
         Me.Label4.Location = New System.Drawing.Point(3, 38)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(48, 14)
+        Me.Label4.Size = New System.Drawing.Size(46, 13)
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "Book ID"
         '
@@ -138,10 +132,9 @@ Partial Class UserControlBorrowBooks
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.Button2.BackColor = System.Drawing.Color.SlateBlue
         Me.Button2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.Button2.ForeColor = System.Drawing.SystemColors.Control
         Me.Button2.Location = New System.Drawing.Point(686, 0)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(64, 28)
@@ -170,7 +163,6 @@ Partial Class UserControlBorrowBooks
         '
         'Panel8
         '
-        Me.Panel8.Controls.Add(Me.LabelIsBookAvaible)
         Me.Panel8.Controls.Add(Me.Panel3)
         Me.Panel8.Controls.Add(Me.Panel2)
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Fill
@@ -178,16 +170,6 @@ Partial Class UserControlBorrowBooks
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(750, 228)
         Me.Panel8.TabIndex = 5
-        '
-        'LabelIsBookAvaible
-        '
-        Me.LabelIsBookAvaible.AutoSize = True
-        Me.LabelIsBookAvaible.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.LabelIsBookAvaible.Location = New System.Drawing.Point(3, 84)
-        Me.LabelIsBookAvaible.Name = "LabelIsBookAvaible"
-        Me.LabelIsBookAvaible.Size = New System.Drawing.Size(0, 13)
-        Me.LabelIsBookAvaible.TabIndex = 2
-        Me.LabelIsBookAvaible.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Panel5
         '
@@ -201,20 +183,18 @@ Partial Class UserControlBorrowBooks
         '
         'Panel7
         '
-        Me.Panel7.Controls.Add(Me.MonthCalendarDeadline)
+        Me.Panel7.Controls.Add(Me.MonthCalendar1)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel7.Location = New System.Drawing.Point(0, 27)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(257, 201)
         Me.Panel7.TabIndex = 3
         '
-        'MonthCalendarDeadline
+        'MonthCalendar1
         '
-        Me.MonthCalendarDeadline.Font = New System.Drawing.Font("Georgia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MonthCalendarDeadline.Location = New System.Drawing.Point(15, 7)
-        Me.MonthCalendarDeadline.MaxSelectionCount = 1
-        Me.MonthCalendarDeadline.Name = "MonthCalendarDeadline"
-        Me.MonthCalendarDeadline.TabIndex = 0
+        Me.MonthCalendar1.Location = New System.Drawing.Point(15, 7)
+        Me.MonthCalendar1.Name = "MonthCalendar1"
+        Me.MonthCalendar1.TabIndex = 0
         '
         'Panel6
         '
@@ -228,31 +208,27 @@ Partial Class UserControlBorrowBooks
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Georgia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(53, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(11, 6)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(101, 14)
+        Me.Label2.Size = New System.Drawing.Size(85, 13)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Borrow Deadline"
         '
-        'ButtonDone
+        'Button1
         '
-        Me.ButtonDone.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(235, Byte), Integer))
-        Me.ButtonDone.Dock = System.Windows.Forms.DockStyle.Right
-        Me.ButtonDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ButtonDone.Font = New System.Drawing.Font("Georgia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonDone.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(53, Byte), Integer))
-        Me.ButtonDone.Location = New System.Drawing.Point(900, 0)
-        Me.ButtonDone.Name = "ButtonDone"
-        Me.ButtonDone.Size = New System.Drawing.Size(107, 56)
-        Me.ButtonDone.TabIndex = 4
-        Me.ButtonDone.Text = "Done"
-        Me.ButtonDone.UseVisualStyleBackColor = False
+        Me.Button1.BackColor = System.Drawing.Color.SlateBlue
+        Me.Button1.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Button1.ForeColor = System.Drawing.SystemColors.Control
+        Me.Button1.Location = New System.Drawing.Point(900, 0)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(107, 56)
+        Me.Button1.TabIndex = 4
+        Me.Button1.Text = "Done"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Panel9
         '
-        Me.Panel9.Controls.Add(Me.ButtonDone)
+        Me.Panel9.Controls.Add(Me.Button1)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel9.Location = New System.Drawing.Point(0, 562)
         Me.Panel9.Name = "Panel9"
@@ -264,7 +240,7 @@ Partial Class UserControlBorrowBooks
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.Color.Lavender
         Me.Controls.Add(Me.Panel9)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Panel1)
@@ -278,7 +254,6 @@ Partial Class UserControlBorrowBooks
         Me.Panel3.PerformLayout()
         Me.Panel4.ResumeLayout(False)
         Me.Panel8.ResumeLayout(False)
-        Me.Panel8.PerformLayout()
         Me.Panel5.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
         Me.Panel6.ResumeLayout(False)
@@ -297,14 +272,14 @@ Partial Class UserControlBorrowBooks
     Friend WithEvents Panel8 As System.Windows.Forms.Panel
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
     Friend WithEvents Panel7 As System.Windows.Forms.Panel
-    Friend WithEvents MonthCalendarDeadline As System.Windows.Forms.MonthCalendar
+    Friend WithEvents MonthCalendar1 As System.Windows.Forms.MonthCalendar
     Friend WithEvents Panel6 As System.Windows.Forms.Panel
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents ButtonDone As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Panel9 As System.Windows.Forms.Panel
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents LabelIsBookAvaible As Label
+
 End Class

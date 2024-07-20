@@ -61,52 +61,10 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
-    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.3.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
-    </Reference>
     <Reference Include="System.Drawing" />
-    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Net.Http, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Net.Http.4.3.0\lib\net46\System.Net.Http.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
-      <Private>True</Private>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
@@ -142,14 +100,7 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ClassAPI.vb" />
-    <Compile Include="ClassBook.vb" />
-    <Compile Include="ClassComment.vb" />
-    <Compile Include="ClassOpenAI.vb" />
-    <Compile Include="ClassTransaction.vb" />
-    <Compile Include="ClassUser.vb" />
-    <Compile Include="ClassConfiguration.vb" />
     <Compile Include="ClassNavigation.vb" />
-    <Compile Include="ClassUtils.vb" />
     <Compile Include="FormMember.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -163,28 +114,16 @@
     <Compile Include="FormAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormApp.Designer.vb">
-      <DependentUpon>FormApp.vb</DependentUpon>
+    <Compile Include="FormLogin.Designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormApp.vb">
+    <Compile Include="FormLogin.vb">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MemberControlBookDetail.Designer.vb">
-      <DependentUpon>MemberControlBookDetail.vb</DependentUpon>
-    </Compile>
-    <Compile Include="MemberControlBookDetail.vb">
-      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="MemberControlComment.Designer.vb">
       <DependentUpon>MemberControlComment.vb</DependentUpon>
     </Compile>
     <Compile Include="MemberControlComment.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="MemberControlCommentTemplate.Designer.vb">
-      <DependentUpon>MemberControlCommentTemplate.vb</DependentUpon>
-    </Compile>
-    <Compile Include="MemberControlCommentTemplate.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="MemberControlHistory.Designer.vb">
@@ -205,12 +144,10 @@
     <Compile Include="MemberControlRank.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Module_Database.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -221,24 +158,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="SignInControl.Designer.vb">
-      <DependentUpon>SignInControl.vb</DependentUpon>
-    </Compile>
-    <Compile Include="SignInControl.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="SignUpControl.Designer.vb">
-      <DependentUpon>SignUpControl.vb</DependentUpon>
-    </Compile>
-    <Compile Include="SignUpControl.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControlABook.Designer.vb">
-      <DependentUpon>UserControlABook.vb</DependentUpon>
-    </Compile>
-    <Compile Include="UserControlABook.vb">
-      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControlAccountManagement.Designer.vb">
       <DependentUpon>UserControlAccountManagement.vb</DependentUpon>
@@ -270,12 +189,6 @@
     <Compile Include="UserControlDashboard.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlLoading.Designer.vb">
-      <DependentUpon>UserControlLoading.vb</DependentUpon>
-    </Compile>
-    <Compile Include="UserControlLoading.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Include="UserControlReturnBooks.Designer.vb">
       <DependentUpon>UserControlReturnBooks.vb</DependentUpon>
     </Compile>
@@ -296,17 +209,11 @@
     <EmbeddedResource Include="FormAdmin.resx">
       <DependentUpon>FormAdmin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormApp.resx">
-      <DependentUpon>FormApp.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MemberControlBookDetail.resx">
-      <DependentUpon>MemberControlBookDetail.vb</DependentUpon>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MemberControlComment.resx">
       <DependentUpon>MemberControlComment.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MemberControlCommentTemplate.resx">
-      <DependentUpon>MemberControlCommentTemplate.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MemberControlHistory.resx">
       <DependentUpon>MemberControlHistory.vb</DependentUpon>
@@ -323,15 +230,6 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="SignInControl.resx">
-      <DependentUpon>SignInControl.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SignUpControl.resx">
-      <DependentUpon>SignUpControl.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControlABook.resx">
-      <DependentUpon>UserControlABook.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControlAccountManagement.resx">
       <DependentUpon>UserControlAccountManagement.vb</DependentUpon>
     </EmbeddedResource>
@@ -346,9 +244,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlDashboard.resx">
       <DependentUpon>UserControlDashboard.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControlLoading.resx">
-      <DependentUpon>UserControlLoading.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlReturnBooks.resx">
       <DependentUpon>UserControlReturnBooks.vb</DependentUpon>
@@ -366,7 +261,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -382,15 +276,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\background.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1636690539-alfons-morales-YLSwjSy7stw-unsplash-2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\log-out.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
